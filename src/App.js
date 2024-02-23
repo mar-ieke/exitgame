@@ -8,10 +8,10 @@ const App = () => {
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    if (pass1 === "pass1" && pass2 === "pass2") {
+    if (pass1 === "ja" && pass2 === "ok") {
       setIsLoggedIn(true);
     } else {
-      setError("So werdet ihr den Schatz niemals finden");
+      setError("So werdet ihr den Schatz niemald finden!");
     }
   };
 
@@ -44,14 +44,14 @@ const App = () => {
             onChange={(e) => setPass2(e.target.value)}
           />
           <br />
-          <button onClick={handleLogin}>Yo ho, a pirate's life for me!</button>
+          <button onClick={handleLogin}>Abtauchen!</button>
           {error && <p>{error}</p>}
         </div>
       ) : (
         <div>
           <p>Luftballons können kaputt gehen...</p>
           <Confetti />
-          <button onClick={handleLogout}>Fertig</button>
+          <button onClick={handleLogout}>Fertig!</button>
         </div>
       )}
     </div>
