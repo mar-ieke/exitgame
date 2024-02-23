@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/exitgame/static/css/main.f855e6bc.css",
+    "main.js": "/exitgame/static/js/main.390a2bee.js",
+    "static/js/453.2d52a8c9.chunk.js": "/exitgame/static/js/453.2d52a8c9.chunk.js",
+    "static/media/logo.svg": "/exitgame/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/exitgame/index.html",
+    "main.f855e6bc.css.map": "/exitgame/static/css/main.f855e6bc.css.map",
+    "main.390a2bee.js.map": "/exitgame/static/js/main.390a2bee.js.map",
+    "453.2d52a8c9.chunk.js.map": "/exitgame/static/js/453.2d52a8c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.390a2bee.js"
+  ]
+}
