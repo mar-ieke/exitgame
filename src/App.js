@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Confetti from "react-confetti";
+import "./App.css"; // Import CSS file for styling
 
 const App = () => {
   const [pass1, setPass1] = useState("");
@@ -20,10 +21,10 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       {!isLoggedIn ? (
-        <div>
-          <p>
+        <div className="login-container">
+          <p className="intro">
             Nicht schlecht, ihr Flachwasserpfeifen seid wahrlich clever! Doch
             wie steht es um den Teamspirit der Crew? Piratinnen, Piraten,
             Meerjungfrauen und Wassermänner, nur wo ihr getrennt seid, werdet
@@ -32,6 +33,7 @@ const App = () => {
           </p>
           <input
             type="password"
+            className="password-input"
             placeholder="Erstes Passwort"
             value={pass1}
             onChange={(e) => setPass1(e.target.value)}
@@ -39,19 +41,24 @@ const App = () => {
           <br />
           <input
             type="password"
+            className="password-input"
             placeholder="Zweites Passwort"
             value={pass2}
             onChange={(e) => setPass2(e.target.value)}
           />
           <br />
-          <button onClick={handleLogin}>Abtauchen!</button>
-          {error && <p>{error}</p>}
+          <button className="login-button" onClick={handleLogin}>
+            Abtauchen!
+          </button>
+          {error && <p className="error-message">{error}</p>}
         </div>
       ) : (
-        <div>
-          <p>Luftballons können kaputt gehen...</p>
+        <div className="loggedin-container">
+          <p className="loggedin-text">Luftballons können kaputt gehen...</p>
           <Confetti />
-          <button onClick={handleLogout}>Fertig!</button>
+          <button className="logout-button" onClick={handleLogout}>
+            Fertig!
+          </button>
         </div>
       )}
     </div>
