@@ -9,7 +9,7 @@ const App = () => {
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    if (pass1 === "ja" && pass2 === "ok") {
+    if (pass1 === "Badehose" && pass2 === "Sonnenbrand") {
       setIsLoggedIn(true);
     } else {
       setError("So werdet ihr den Schatz niemald finden!");
